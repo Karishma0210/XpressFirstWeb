@@ -1,0 +1,152 @@
+/* Global css */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap");
+html,
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  font-family: "Poppins", sans-serif !important;
+  background: #ffffff;
+  line-height: 1.7em;
+  overflow-x:hidden;
+}
+article,
+aside,
+footer,
+header,
+hgroup,
+nav,
+section {
+  display: block;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+p {
+  margin: 0px;
+}
+
+/* ========== some important CSS ==========  */
+.max-width {
+  max-width: 1100px;
+  margin: auto;
+}
+.bg-primary {
+  background: rgb(35,44,109) !important;
+}
+.custom-btn {
+  background: white;
+  color: #171717;
+}
+.fs-3 {
+  font-size: 3.5rem !important;
+}
+.fs-14 {
+  font-size: 14px !important;
+}
+.pointer{
+  cursor:pointer;
+}
+
+/* ========== Header ========== */
+.header-nav-items > ul > li {
+  margin-right: 1rem;
+}
+
+.header {
+  position: fixed;
+  left: 0;
+  right: 0;
+  transition: 0.3s;
+  background: white;
+  z-index: 100;
+  box-shadow: 0px 3px 6px 0px #00000015;
+}
+.is-sticky {
+  box-shadow: 0px 3px 25px 0px #00000025;
+}
+.brand-logo {
+  transition: 0.3s;
+}
+.is-sticky .brand-logo {
+  width: 12rem !important;
+}
+
+@media screen and (max-width: 767px) {
+  .brand-logo {
+    width: 12rem !important;
+  }
+  .is-sticky .brand-logo {
+    width: 10rem !important;
+  }
+  .footer p {
+    text-align: center;
+  }
+}
+
+/*==================*/
+/* CUSTOM BUTTON HOVER EFFECT
+/*==================*/
+.push-on-hover:hover,
+.push-on-hover:focus,
+.push-on-hover:active {
+  animation-name: push-on-hover;
+  animation-duration: 0.3s;
+  animation-timing-function: linear;
+  animation-iteration-count: 1;
+}
+.push-on-hover {
+  display: inline-block;
+  vertical-align: middle;
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+}
+
+@-webkit-keyframes push-on-hover {
+  50% {
+    transform: scale(0.8);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@keyframes push-on-hover {
+  50% {
+    transform: scale(0.8);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+.custom-style {
+  padding: 4px 1rem;
+  border: none;
+  outline: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+/* ====== PULSE EFFECT ======= */
+
+.pulse {
+  line-height: 100px;
+  animation: animate-pulse 3s linear infinite;
+}
+@keyframes animate-pulse {
+  0% {
+    box-shadow: 0 0 0 0 #5b9bd5, 0 0 0 0 #5b9bd5;
+  }
+  35% {
+    box-shadow: 0 0 0 30px rgba(255, 109, 74, 0), 0 0 0 0 #5b9bd5;
+  }
+  70% {
+    box-shadow: 0 0 0 30px rgba(255, 109, 74, 0),
+      0 0 0 30px rgba(255, 109, 74, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(255, 109, 74, 0), 0 0 0 30px rgba(255, 109, 74, 0);
+  }
+}
