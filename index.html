@@ -25,6 +25,14 @@
 
   <!-- ======== header section start ======== -->
   <header id="header" class="header" >
+
+    <!-- success massage  -->
+    <div class="alert alert-info alert-dismissible fade show max-width" role="alert">
+      <strong>Holy guacamole!</strong> You should check in on some of those fields below.
+      <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    </div>
+
+    <!-- navigation bar -->
     <div class="container-fluid max-width" >
       <nav class="navbar navbar-expand-lg navbar-light">
           <a class="navbar-brand" href="./assets/index.html"><img class="brand-logo" style="width: 15rem;" src="./assets/images/logo.png" alt="xPressFirst logo" /></a>
@@ -41,6 +49,7 @@
           </div>
       </nav>
     </div>
+    <!-- /nav end -->
   </header>
   <!-- ======== header section end ========  -->
 
@@ -53,7 +62,7 @@
         <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
           <div  class="carousel-inner" >
             <!-- single slider item -->
-            <div class="carousel-item active" >
+            <div class="carousel-item active"  data-interval="10000" >
               <div class="row align-items-center" >
                   <!-- hero section left side  -->
                   <div class="col-md-6" >
@@ -75,29 +84,7 @@
               </div>
             </div>          
             <!-- single slider item -->
-            <div class="carousel-item " >
-              <div class="row align-items-center" >
-                  <!-- hero section left side  -->
-                  <div class="col-md-6" >
-                    <div class="hero-content text-white" >
-                      <h1 class="text-uppercase" >COVID-19 EQuipments</h1>
-                      <p>Detection Kits & PPE Kits</p>
-                      <div class="hero-buttons mt-4" >
-                        <a href="#" ><button class="custom-btn btn text-dark push-on-hover me-2 btn-enquire" >Enquire now</button></a>
-                        <a href="./pages/service.html" ><button class="custom-btn btn push-on-hover text-white btn-service">Services</button></a>
-                      </div>
-                    </div>
-                  </div>
-                  <!-- hero section right side  -->
-                  <div class="col-md-6" >
-                    <div class="hero-image px-3 pt-md-0 pt-5" >
-                      <img class="w-100" src="./assets/images/ppesideface-2.png" alt="It service accesory" />
-                    </div>
-                  </div>
-              </div>
-            </div>          
-            <!-- single slider item -->
-            <div class="carousel-item " >
+            <div class="carousel-item "  data-interval="10000" >
               <div class="row align-items-center" >
                   <!-- hero section left side  -->
                   <div class="col-md-6" >
@@ -117,7 +104,36 @@
                     </div>
                   </div>
               </div>
+            </div>         
+            <!-- single slider item -->
+            <div class="carousel-item "  data-interval="10000" >
+              <div class="row align-items-center" >
+                  <!-- hero section left side  -->
+                  <div class="col-md-6" >
+                    <div class="hero-content text-white" >
+                      <h1 class="text-uppercase" >COVID-19 EQuipments</h1>
+                      <p>Detection Kits & PPE Kits</p>
+                      <div class="hero-buttons mt-4" >
+                        <a href="#" ><button class="custom-btn btn text-dark push-on-hover me-2 btn-enquire" >Enquire now</button></a>
+                        <a href="./pages/service.html" ><button class="custom-btn btn push-on-hover text-white btn-service">Services</button></a>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- hero section right side  -->
+                  <div class="col-md-6 position-relative" >
+                      <div class="hero-image px-3 pt-md-0 pt-5" style="height:25rem" >
+                        <div class="item-slide">
+                            <img src="./assets/images/ppesideface-2.png" class="w-100" alt='2 man they ware PPE' />
+                        </div>
+                        <div class="item-slide">
+                            <img src="./assets/images/covid-kits-2.png" class="w-100" alt='2 man they ware PPE' />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+              </div>
             </div>          
+ 
           </div>
         </div>
       <!-- slider buttons -->
@@ -141,7 +157,7 @@
   <!-- ======== Hero section end ======== -->
 
 
-  <!-- ======== Services section started ======== -->
+ <!-- ======== Services section started ======== -->
   <section id="service" class="service" >
     <div class="container max-width py-4 px-4 px-md-0" >
        
@@ -165,7 +181,7 @@
          </div>  
 
          <!-- services section item -->
-         <div class="row my-3 py-5 custom-border service-middle-item" >
+         <div class="row my-3 py-5 service-middle-item" >
            <div class="col-md-6" data-aos="zoom-out-right" data-aos-duration="1800"  >
                <div class="service-item-content ps-md-5 mt-4 mt-md-0" >
                  <h2 class='service-item-title' >COVID-19 Detection Kits & PPE Kits</h2>
@@ -183,7 +199,16 @@
            </div>
            <div class="col-md-6" data-aos="zoom-out-left" data-aos-duration="1800"  >
               <div class="image-frame m-auto mt-md-3 " >
-                <img src="./assets/images/ppesideface.png" alt='2 man they ware PPE' />
+                <div id="carouselExampleInterval" class="carousel slide h-100" touch="true" data-bs-ride="carousel">
+                  <div class="carousel-inner h-100">
+                    <div class="carousel-item active h-100" data-bs-interval="3000">
+                       <img src="./assets/images/ppesideface.png" alt='2 man they ware PPE' />
+                    </div>
+                    <div class="carousel-item h-100" data-bs-interval="2500">
+                       <img src="./assets/images/covid-kits.png" alt='COVID kits' />
+                    </div>
+                   </div>
+                 </div>
              </div> 
            </div>
          </div>  
@@ -219,10 +244,10 @@
        <h2 class=" mb-3 pb-2 pt-md-3" >Our Values</h2>
        <!-- about section content -->
        <div class="about-content" >
-         <img class="about-wordart-img" src="./assets/images/our-values-wordart.png" alt="Some stylish texts" style="width: 35rem;max-width:100%" />          
-         <p class="px-md-5 text-center mx-md-5" > Our work ethics, transperancy and work ethics - is what makes us different. We always keep our customers on priority and meet their requirements on time to provide them the best of services. </p>
+         <img class="about-wordart-img" src="./assets/images/our-values-wordart.png" alt="Some stylish texts" style="width: 40rem;max-width:100%" />          
+         <p class="px-md-5 mx-md-5" > Our work ethics, transperancy and work ethics - is what makes us different. We always keep our customers on priority and meet their requirements on time to provide them the best of services. </p>
          <h1 class="my-3 mt-4" >Our History</h1>
-         <P class="px-md-5 text-center mx-md-5" >Since 2010, we offer our clients premium and moderate cloud-based business arrangements conveyed close by the most noteworthy gauges in benefit. We have built our reputation on the honesty and integrity of our people, and the relationships forged with local telephone companies, vendors, suppliers and (most significantly) our customers. You can be assured that our technicians are well informed and educated on the leading edge technologies, products and services available we sell, service and support. You have our promise to clearly understand your requirements and recommend the best solution for your organization.</P>  
+         <P class="px-md-5 mx-md-5" >Since 2010, we offer our clients premium and moderate cloud-based business arrangements conveyed close by the most noteworthy gauges in benefit. We have built our reputation on the honesty and integrity of our people, and the relationships forged with local telephone companies, vendors, suppliers and (most significantly) our customers. You can be assured that our technicians are well informed and educated on the leading edge technologies, products and services available we sell, service and support. You have our promise to clearly understand your requirements and recommend the best solution for your organization.</P>  
          
          <!-- About section timeline  -->
          <div class="ps-timeline-sec">
@@ -256,15 +281,15 @@
          <h1 class="my-3 mt-4" >Our Clients</h1>
 
          <div class="about-client" >
-           <div class="d-flex flex-wrap justify-content-center" >
-              <a class="client-wrapper push-on-hover" target="_blank" href="#" ><img src="./assets/images/adnoc-logo.png" alt="adnoc-logo" /></a> 
-              <a class="client-wrapper push-on-hover" target="_blank" href="#" ><img src="./assets/images/Dubai-Petroleum-logo.jpg" alt="Dubai-Petroleum-logo" /></a> 
-              <a class="client-wrapper push-on-hover" target="_blank" href="#" ><img src="./assets/images/dubai-police-logo.png" alt="dubai-police-logo.png" /></a> 
-              <a class="client-wrapper push-on-hover" target="_blank" href="#" ><img src="./assets/images/dubai-customs-logo.png" alt="dubai-customs-logo" /></a> 
-              <a class="client-wrapper push-on-hover" target="_blank" href="#" ><img src="./assets/images/purehealth-logo.png" alt="purehealth-logo" /></a> 
-              <a class="client-wrapper push-on-hover" target="_blank" href="#" ><img src="./assets/images/etisalat-logo.png" alt="etisalat-logo" /></a> 
-              <a class="client-wrapper push-on-hover" target="_blank" href="#" ><img src="./assets/images/enoc-logo.png" alt="enoc-logo" /></a> 
-              <a class="client-wrapper push-on-hover" target="_blank" href="#" ><img src="./assets/images/weatherford-logo.png" alt="weatherford-logo" /></a> 
+           <div class="d-flex flex-wrap justify-content-center align-items-center px-sm-5" >
+              <div class="client-wrapper" ><img src="./assets/images/adnoc-logo.png" alt="adnoc-logo" /></div> 
+              <div class="client-wrapper" ><img src="./assets/images/Dubai-Petroleum-logo.jpg" alt="Dubai-Petroleum-logo" /></div> 
+              <div class="client-wrapper" ><img src="./assets/images/dubai-police-logo.png" alt="dubai-police-logo.png" /></div> 
+              <div class="client-wrapper" ><img src="./assets/images/dubai-customs-logo.png" alt="dubai-customs-logo" /></div> 
+              <div class="client-wrapper" ><img src="./assets/images/purehealth-logo.png" alt="purehealth-logo" /></div> 
+              <div class="client-wrapper" ><img src="./assets/images/etisalat-logo.png" alt="etisalat-logo" /></div> 
+              <div class="client-wrapper" ><img src="./assets/images/enoc-logo.png" alt="enoc-logo" /></div> 
+              <div class="client-wrapper" ><img src="./assets/images/weatherford-logo.png" alt="weatherford-logo" /></div> 
            </div>
          </div>
 
@@ -289,11 +314,10 @@
             
             <div class="row no-gutters">
               <!-- contact section left side  -->
-              <div class="col-md-7 d-flex align-items-stretch">
+              <div class="col-md-7 pe-md-0 d-flex align-items-stretch">
                 <div class="contact-wrap w-100 p-md-5 p-4">
                   <h3 class="mb-4">Get in touch</h3>
                   <!-- contact form  -->
-                  <form method="POST" id="contactForm" name="contactForm">
                     <div class="row">
                       <!-- name  -->
                       <div class="col-md-6">
@@ -342,22 +366,20 @@
                       </div>
                       <!-- submit button  -->
                       <div class="col-md-12">
-                        <div class="form-group push-on-hover">
+                        <div class="form-group push-on-hover submit">
                           <input
                             type="submit"
                             value="Send Message"
                             class="btn bg-primary"
                           />
-                          <div class="submitting"></div>
                         </div>
                       </div>
                     </div>
-                  </form>
                 </div>
               </div>
 
               <!-- contact section left side  -->
-              <div class="col-md-5 d-flex align-items-stretch">
+              <div class="col-md-5 ps-md-0 d-flex align-items-stretch">
                 <!-- contact info  -->
                 <div class="info-wrap bg-primary w-100 p-4">
                   <!-- address  -->
@@ -407,7 +429,6 @@
   </section>
   <!-- ======== contact-us section ended ======== -->
 
-
   <!-- ======== FOOTER starts ======== -->
   <footer id="footer" class="footer border-top" >
     <div class="container max-width py-2" >
@@ -417,7 +438,7 @@
              <p>Copyright © All Rights Reserved</p>
           </div>
           <div class="col-md-6 text-md-end" >
-            <p>Designed & Developed by <a href="#" >KsTechStudio.com</a></p>
+            <p>Designed & Developed by <a href="https://www.linkedin.com/in/karishmasukhwani/" style="color: #525fbd;" >KsTechStudio.com</a></p>
           </div>
         </div>
       </div>

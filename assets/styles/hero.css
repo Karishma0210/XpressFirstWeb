@@ -1,9 +1,10 @@
 .hero {
   min-height:715px;
   display:flex;
+  overflow: hidden;
 }
 .hero-content > h1 {
-  font-size: 4rem;
+  font-size: 3rem;
 }
 
 .hero-content > p {
@@ -15,7 +16,6 @@
   box-shadow: 0px 0px 4px 5px #4c548b !important;
 
 }
-
 .btn-service{
   box-shadow: 0px 0px 10px 5px #4c548b !important;
   background:transparent !important;
@@ -64,6 +64,21 @@
     opacity: 0;
   }
 }
+.item-slide  {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  transform: scale(0.9);
+  opacity: 0;
+  transition: all 0.5s ease-in-out;
+}
+
+.showing {
+  z-index: 1;
+  transform: none;
+  opacity: 1;
+}
 
 /* ===== Hero responsive CSS ====== */
 @media screen and (max-width: 767px) {
@@ -80,5 +95,7 @@
   .hero-content {
     text-align: center;
   }
-
+  .hero-content > h1 {
+    font-size: 2.5rem;
+  }
 }

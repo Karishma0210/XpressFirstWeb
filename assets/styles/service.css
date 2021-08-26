@@ -1,20 +1,22 @@
+.service{
+  overflow: hidden;
+}
 .image-frame {
-  border-radius: 100px;
+  border-radius: 15px;
   overflow: hidden;
   width: 90%;
   height: 17rem;
   box-shadow: 10px 15px 15px 7px rgb(0 0 0 / 25%);
-  border: 1px solid #0000001a;
   padding:1rem;
 }
-.image-frame > img {
+.image-frame img {
   width: 100%;
   transition: 0.3s;
   height: 100%;
   object-fit: contain;
 }
 
-.image-frame:hover > img {
+.image-frame:hover img {
   transform: scale(1.1);
 }
 
@@ -24,13 +26,12 @@
   font-weight: 600;
   margin-bottom:10px;
 }
+.service-middle-item h2{
+  font-size: 2.7rem !important;
+}
 
 .service-item-content > p {
   font-size: 18px;
-}
-.custom-border {
-  border-bottom: 1px solid #0000001c;
-  border-top: 1px solid #0000001c;
 }
 
 /* ======= responsive ======= */
@@ -41,8 +42,7 @@
   .image-frame{
     width:100% !important;
   }
-}
-
-#service {
-  overflow: hidden;
+  .service-middle-item h2{
+    font-size: 1.8rem !important;
+  }
 }

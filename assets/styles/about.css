@@ -1,13 +1,10 @@
-.about {
-  overflow-x: hidden;
-}
 .about
 p,
 h6 {
   color: #dcdbdb;
   font-weight: 400;
   font-size: 16px;
-  text-align:justify;
+  text-align:center;
 }
 
 /* for clinet  */
@@ -17,7 +14,7 @@ h6 {
   overflow: hidden;
   background: white;
   margin: 1rem 1rem 0rem 0rem;
-  border-radius: 15px;
+  border-radius: 10px;
   box-shadow: 2px 2px 20px 0px #0000003d;
   transition: 0.3s;
 }
@@ -207,11 +204,11 @@ h6 {
 /* ===== responsive ===== */
 @media screen and (max-width: 767px){
   .client-wrapper {
-    width:9rem;
+    width:10rem;
     height:5rem;
   }
 }
-@media screen and (max-width: 380px) {
+@media screen and (max-width: 400px) {
   .client-wrapper {
     width:7rem;
     height:4rem;

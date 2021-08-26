@@ -50,12 +50,22 @@ p {
 .pointer{
   cursor:pointer;
 }
-
+.is-active{
+  color: rgb(35,44,109) !important;
+  border-bottom: 1px solid rgb(35,44,109) !important;
+}
 /* ========== Header ========== */
 .header-nav-items > ul > li {
   margin-right: 1rem;
 }
-
+.alert{
+  position: absolute;
+  z-index: 100;
+  text-align: center;
+  top: 10px;
+  margin:0px 1rem;
+  opacity:0;
+}
 .header {
   position: fixed;
   left: 0;
@@ -64,6 +74,8 @@ p {
   background: white;
   z-index: 100;
   box-shadow: 0px 3px 6px 0px #00000015;
+  display:flex;
+  justify-content:center;
 }
 .is-sticky {
   box-shadow: 0px 3px 25px 0px #00000025;
@@ -85,6 +97,11 @@ p {
   .footer p {
     text-align: center;
   }
+}
+@media screen and (max-width: 990px) {
+ .header-nav-items a {
+   text-align:right;
+ }
 }
 
 /*==================*/
